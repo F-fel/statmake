@@ -1,0 +1,27 @@
+body {
+  background-color: aliceblue;
+  padding: 0,0,0,0;
+}
+#filecontent{
+height: 60vh;
+width: 30vw;
+display: none;
+}
+#maindiv {
+  background-color: lightblue;
+  height: 98%;
+  width: 99%;
+  border-radius: 25px;
+}
+.right{
+    margin-left: 70%;
+}
+
+.center {
+    position: center;
+    display: flex;
+    justify-content: center;
+}
+#textCopy {
+  display: none;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>repl.it</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<div id="maindiv">
+		<h1 class="center">Welcome to STATMAKER</h1>
+
+		<ol>
+			<li> click on the upload button and upload your stats (.csv)</li>
+			<li> Copy , Paste and Enjoy! </li>
+		</ol>
+		<div id="upload" class="center">
+			<label for="myfiles">
+      <svg width="330" height="300" id = "uploadbox" >
+        <rect x="2" y="2" width ="326" height ="296" fill= "white"/>
+        <!--pointy part of the arrow -->
+        <path d="M 85 95 l75 -75 l75 75 Z" stroke ="white" fill="red"/>
+        <!-- arrow body -->
+        <path d="M 120 95 l0 75 l75 0 l0 -75" stroke ="white" fill="red"/>
+        <!-- bed -->
+        <path d="M 40 185 l0 -50 l25 0 l0 50 M 40 185 l0 50 l250 0 l0 -50 l0 -50 l-25 0 l0 50" stroke ="white" fill="red" />
+        <text x="75" y="225" font-size ="50">Upload</text>
+      </svg>
+      
+    </label>
+		  <input id="myfiles" hidden="true" multiple type="file" onchange="main()">
+    </div>
+
+    <div id ="textCopy" class="center">
+    <textarea rows="50" cols = "50" id="output"></textarea>
+    <!-- The button used to copy the text -->
+    <button onclick="myFunction()">Copy text</button>
+    </div>
+    <textarea id="filecontent"></textarea>
+  </div>
+    <script src="script.js"></script>
+  </body>
+</html>
